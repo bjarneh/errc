@@ -1,0 +1,48 @@
+" minimal subset of my vimrc file
+
+" VIM not VI
+set nocompatible
+
+" map Ctrl-C: save and quit
+map! <C-C> <ESC>:wq<CR>
+map  <C-C> :wq<CR>
+
+" escape is far away
+map! <C-L> <ESC>
+
+" 4 is enough
+set tabstop=4
+set shiftwidth=4
+
+" replace tabs with space (Python must)
+set expandtab
+
+" no formatting of preformatted text (copy-n-paste)
+set pastetoggle=<F3>
+
+" be clever!
+set smartindent
+
+" syntax coloring
+syntax on
+
+" backspace consumes!
+set backspace=2
+
+" scroll before end of screen
+set scrolloff=4
+
+
+" open files where you left offf
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" map F8: toggle line numbers
+map <F8> :set number!<CR><Bar>:echo "line numbers: " . strpart("OffOn", 3 * &number, 3) <CR>
+
+" make invisible characters visible
+set listchars=eol:␤,tab:>-,trail:®,extends:>,precedes:<,nbsp:¤
+
+" map F9: toggle invisible invisible
+map <F9> :set list!<CR>
