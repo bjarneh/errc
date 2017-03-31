@@ -1,2 +1,2 @@
 # errc
-Emergency rc files
+Emergency rc files and startup kit for new machines

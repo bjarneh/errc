@@ -1,0 +1,12 @@
+# Handy aliases
+alias x='xterm&'
+alias sshoio='ssh bjarneh@login.ifi.uio.no'
+alias sshntnu='ssh bjarhole@login.ansatt.ntnu.no'
+alias sshgw='ssh bjarhole@sshgw.ntnu.no'
+alias sshdbdev='ssh dbdev@192.168.1.223'
+alias sshresman='ssh resman@192.168.1.213'
+alias sl='ls'
+
+## Functions that cannot be separate scripts
+mkcd(){ [ -n "$1" ] && mkdir -p "$1" && cd "$1"; }
+mvcd(){ [ -f "$1" ] && [ -d "$2" ] && mv "$1" "$2" && cd "$2"; }
