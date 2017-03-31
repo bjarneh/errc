@@ -15,7 +15,11 @@ fi
 
 # Home made bash completion scripts
 if [ -d ~/.bash_completion.d ]; then
-    for f in ~/.bash_completion.d/*; do
-        . "$f"
-    done
+    has_files=$(ls -A ~/.bash_completion.d)
+    if [ -n "$has_files" ]; then
+        for f in ~/.bash_completion.d/*; do
+            . "$f"
+        done
+    fi
 fi
+
