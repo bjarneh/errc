@@ -1,0 +1,21 @@
+# cat this file into the bottom of your ~/.bashrc to get started
+
+
+# Home grown binaries
+if [ -d ~/bin ]; then
+    export PATH=~/bin:"$PATH"
+fi
+
+
+# VCS PS1
+if [ -f ~/.ps1.bash ]; then
+    . ~/.ps1.bash
+fi
+
+
+# Home made bash completion scripts
+if [ -d ~/.bash_completion.d ]; then
+    for f in ~/.bash_completion.d/*; do
+        . "$f"
+    done
+fi
