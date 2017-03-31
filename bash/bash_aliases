@@ -1,6 +1,6 @@
 # Handy aliases
 alias x='xterm&'
-alias sshoio='ssh bjarneh@login.ifi.uio.no'
+alias sshuio='ssh bjarneh@login.ifi.uio.no'
 alias sshntnu='ssh bjarhole@login.ansatt.ntnu.no'
 alias sshgw='ssh bjarhole@sshgw.ntnu.no'
 alias sshdbdev='ssh dbdev@192.168.1.223'
