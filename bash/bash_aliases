@@ -2,7 +2,7 @@
 alias x='xterm&'
 alias sshuio='ssh bjarneh@login.ifi.uio.no'
 alias sshntnu='ssh bjarhole@login.ansatt.ntnu.no'
-alias sshgw='ssh bjarhole@sshgw.ntnu.no'
+alias sshgw='ssh bjarhole@sshgw.it.ntnu.no'
 alias sshdbdev='ssh dbdev@192.168.1.223'
 alias sshresman='ssh resman@192.168.1.213'
 alias sl='ls'
