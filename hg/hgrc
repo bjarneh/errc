@@ -1,0 +1,13 @@
+[ui]
+username = Bjarne Holen <bjarneh@ifi.uio.no>
+editor = vim
+
+[extensions]
+color =
+pager =
+
+[pager]
+pager = LESS='FRSXQ' less
+quiet = True
+attend = outgoing,incoming,diff,status,log,qdiff,blame,annotate,pdiff,glog
+

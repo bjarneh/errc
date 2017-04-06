@@ -1,0 +1,9 @@
+[user]
+	email = bjarneh@ifi.uio.no
+	name = Bjarne Holen
+[alias]
+	st = status
+[push]
+	default = simple
+[core]
+    editor = vim
