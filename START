@@ -1,0 +1,39 @@
+# Install some essentials
+
+sudo apt-get install aptitude
+sudo apt-get install vim
+sudo apt-get install chromium-browser
+sudo apt-get install mercurial
+sudo apt-get install git
+sudo aptitude install openjdk-8-jdk
+
+
+# Update $HOME/.config/user-dirs.dirs 
+
+mkdir $HOME/bin
+
+mkdir -p $HOME/.bash_completion.d/
+cat bash/bashrc >> ~/.bashrc
+cp bash/bash_aliases ~/.bash_aliases
+
+mkdir -p $HOME/git/mine
+mkdir -p $HOME/mercurial/mine
+
+
+# Locate these configuration stubs  :-)
+
+cd $HOME/git/mine
+git clone git@github.com:bjarneh/errc.git
+
+
+# Add ssh public key to github and
+# download some useful tools and libraries
+
+cd $HOME/git/mine
+git clone git@github.com:bjarneh/jtv.git
+git clone git@github.com:bjarneh/jz.git
+
+cd $HOME/bin
+ln -s ../git/mine/jz/bin/jz .
+cd ../git/mine/jtv
+jz && mv jtv $HOME/bin
