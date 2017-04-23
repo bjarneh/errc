@@ -3,8 +3,10 @@ alias x='xterm&'
 alias sshuio='ssh bjarneh@login.ifi.uio.no'
 alias sshntnu='ssh bjarhole@login.ansatt.ntnu.no'
 alias sshgw='ssh bjarhole@sshgw.it.ntnu.no'
-alias sshdbdev='ssh dbdev@192.168.1.223'
-alias sshresman='ssh resman@192.168.1.213'
+alias sshdbdev_out='ssh dbdev@195.18.225.138'
+alias sshdbdev='ssh dbdev@10.20.62.14'
+alias sshresman_out='ssh resman@195.18.225.139'
+alias sshresman='ssh resman@10.20.62.15'
 alias sl='ls'
 
 ## Functions that cannot be separate scripts
