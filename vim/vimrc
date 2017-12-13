@@ -43,6 +43,9 @@ map! <C-A> <C-O>0
 map! <C-E> <C-O>$
 
 
+" fold javadoc comments when files are opened
+autocmd FileType java :set fmr=/**,*/ fdm=marker fdc=1
+
 " open files where you left offf
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
