@@ -70,3 +70,31 @@ set listchars=eol:␤,tab:>-,trail:®,extends:>,precedes:<,nbsp:¤
 
 " map F9: toggle invisible
 map <F9> :set list!<CR>
+
+" *very* basic theme
+"set hi Comment ctermfg=Red
+"set hi String ctermfg=Blue
+
+"set background=dark
+
+" experiment with actual themes
+colorscheme desert
+"colorscheme blue
+"colorscheme darkblue
+"colorscheme default
+"colorscheme delek
+"colorscheme desert
+"colorscheme elflord
+"colorscheme evening
+"colorscheme industry
+"colorscheme koehler
+"colorscheme morning
+"colorscheme murphy
+"colorscheme pablo
+"colorscheme peachpuff
+"colorscheme ron OK
+"colorscheme shine
+"colorscheme slate WELL
+"colorscheme torte
+"colorscheme zellner
+
